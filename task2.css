@@ -1,0 +1,309 @@
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9e9;
+    color: #050505;
+}
+
+h2 {
+    text-align: center;
+    margin-left: -12cm;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf7f7;
+    color: #080808;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    margin-right: 10px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align text */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right nav ul li {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.header-right nav ul li a {
+    color: #060606;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-right nav ul li a:hover {
+    color: #0f0f0f;
+    background-color: #ececf1;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    padding-top: 120px; /* Adjust padding to account for fixed header */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ece4e4;
+    color: #080808;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About section specific styles */
+#about {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.profile-text {
+    flex: 1;
+    padding-right: 20px; /* Create space between text and image */
+    text-align: justify; /* Justify text for neat appearance */
+    margin-left: 2cm;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 15%; /* Limit width of image */
+    margin-left: 5cm; /* 5cm gap between text and image */
+    text-align: center; /* Center align image */
+}
+
+.profile-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.tagline {
+    margin-top: 10px; /* Adjust spacing */
+}
+
+.home-buttons {
+    margin-top: 20px;
+    text-align: center; /* Center align buttons */
+}
+
+.home-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bae8e8;
+    color: #0f0f0f;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-buttons a:hover {
+    background-color: #ececf1;
+}
+
+/* Skills section specific styles */
+#skills {
+    padding: 40px 20px;
+    background-color: #f7f0f0;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; /* Center align items */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.skills-box {
+    flex: 1;
+    margin-bottom: 20px;
+    max-width: 600px; /* Limit the width of the skills box */
+}
+
+.skills-box h3 {
+    margin-bottom: 10px;
+    text-align: left; /* Center align the heading */
+}
+
+.skills-box ul {
+    padding-left: 20px;
+    text-align: left; /* Left align skill lists */
+}
+
+/* Projects section specific styles */
+#projects {
+    text-align: center; /* Center align the heading */
+    margin-left : 20px;
+    padding: 40px 20px;
+    background-color: #f7f0f0;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project {
+    padding: 20px;
+    background-color: #ececf1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: #dcdcdf;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.project-details p {
+    margin-bottom: 5px;
+}
+
+/* Achievements section specific styles */
+#achievements {
+    padding: 40px 20px;
+    background-color: #f7f0f0;
+    margin-bottom: 20px;
+}
+
+#achievements ul {
+    padding-left: 20px;
+}
+
+#achievements li {
+    margin-bottom: 10px;
+}
+
+/* Contact section specific styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #f7f0f0;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact-form button {
+    background-color: #bae8e8;
+    color: #0f0f0f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#contact-form button:hover {
+    background-color: #ececf1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-text {
+        align-items: center; /* Center align text on small screens */
+    }
+
+    .header-right {
+        display: none; /* Hide nav menu on small screens */
+    }
+
+    .profile-container {
+        flex-direction: column; /* Stack profile sections on small screens */
+    }
+
+    .home-buttons {
+        text-align: center; /* Center align buttons on small screens */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills boxes on small screens */
+    }
+
+    .skills-box {
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+    }
+}

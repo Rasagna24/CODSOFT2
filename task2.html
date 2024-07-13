@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js" defer></script>
+    
+    <title>Parvathini Rasagna - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" width="50" height="50">
+            <div class="header-text">
+                <h1>Parvathini Rasagna</h1>
+                <p class="tagline">Enthusiastic Computer Science Student | Web Developer</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <section id="about">
+            <h2>About </h2>
+            <div class="profile-container">
+                <div class="profile-text">
+                    <p>I am a third-year engineering student pursuing a Bachelor's degree with a deep-seated passion for exploring the technology . My academic journey has been marked by a relentless pursuit of knowledge and a drive to apply theoretical insights to practical, real-world challenges.  I thrive on the intellectual challenges that engineering offers.
+                        Beyond academics, I am an avid [mention hobbies or interests related to your field], constantly seeking to broaden my understanding through hands-on projects and collaborative ventures. My experiences in web development have honed my technical skills in HTML,CSS,JS , while also fostering my ability to communicate and work effectively within teams.
+                        Looking ahead, my goal is to leverage my skills to make meaningful contributions in the field of engineering. Whether it's through developing sustainable technologies or tackling societal issues with innovative solutions, I am committed to making a positive impact. I am excited about the possibilities that lie ahead and eager to embark on new challenges that will shape my growth as an engineer and a problem-solver.</p>
+                    <div class="home-buttons">
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <img src="profile.png" alt="Profile Image">
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming Languages: C, Python, Java</li>
+                        <li>Networking: Data Communication, Computer Networks</li>
+                        <li>Systems: Operating Systems</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Digital Logic Circuits</li>
+                        <li>Computer Organization Architecture</li>
+                    </ul>
+                </div>
+                <div class="skills-box">
+                    <h3>Additional Skills</h3>
+                    <ul>
+                        <li>Fundraising</li>
+                        <li>Leadership</li>
+                        <li>Organizing</li>
+                        <li>Planning</li>
+                        <li>Team Coordination</li>
+                        <li>Volunteering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Smart India Hackathon</h3>
+                    <div class="project-details">
+                        <p>Developed an offline Large Language Model (LLM) tool for generating human-like responses and implementing translation features.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Python Case Study</h3>
+                    <div class="project-details">
+                        <p>Implemented a loan management system using Pandas for data analysis and SQLite3 for database management. Evaluated loan eligibility based on property, salary, and education, and integrated voter eligibility assessment.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>AI Applications Course Projects</h3>
+                    <div class="project-details">
+                        <p>Implemented image recognition, text-to-speech, and voice recognition systems using AI techniques.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Calculator Application</h3>
+                    <div class="project-details">
+                        <p>Developed a basic calculator with a user-friendly interface for addition, subtraction, multiplication, and division using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Weather Web App</h3>
+                    <div class="project-details">
+                        <p>Developed a weather web app fetching real-time data from a weather API based on user location input, displaying current conditions and temperature.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Landing Page</h3>
+                    <div class="project-details">
+                        <p>Developed a responsive landing page using HTML, CSS, and JavaScript for a budget tracker and web food platform.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Tic Tac Toe</h3>
+                    <div class="project-details">
+                        <p>Developed a Tic Tac Toe web application game using HTML, CSS, and JavaScript, with added neon bordering for enhanced user experience.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="toggleProjectDetails(this)">
+                    <h3>Stopwatch</h3>
+                    <div class="project-details">
+                        <p>Developed a stopwatch web application with functionalities for start, stop, pause, play, and reset using JavaScript and styled with CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>Hackathon Winner:</strong> University level-2023, Smart India Hackathon, Started Implementing Offline LLM.</li>
+                <li><strong>School Level Competitions:</strong> Participated in Spell Bee and Handwriting contests during schooling.</li>
+                <li><strong>Workshop Participation:</strong> Attended workshops on IoT, Cybersecurity, and MDC organized by Career Code.</li>
+                <li><strong>Volunteer Experience:</strong> Contributed as a member of WLF for the Shore Fest event in 4th semester.</li>
+                <li><strong>Certifications:</strong> Completed multiple certifications from Coursera and LinkedIn Learning on various topics.</li>
+                <li><strong>Language Proficiency:</strong> Proficient in English and Telugu.</li>
+            </ul>
+        </section>
+        
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <p>I am currently pursuing a Bachelor's degree in CSE at GITAM , I have immersed myself in the dynamic world of engineering with a focus on Coding . My coursework has equipped me with a solid foundation in blending theoretical knowledge with practical applications to tackle complex engineering challenges.</p>
+                <a class="resume-button" href="resume.pdf" target="_blank">Download Resume</a>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:prasagna@gitam.in">prasagna@gitam.in</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/parvathini-rasagna-a20999249" target="_blank">linkedin.com/in/parvathini-rasagna-a20999249</a></p>
+                <p>GitHub: <a href="https://github.com/Rasagna24" target="_blank">github.com/Rasagna24</a></p>
+                <p>Phone: +91 9676595709</p>
+                <p>Location: Visakhapatnam, Andhra Pradesh, India</p>
+            </div>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Parvathini Rasagna. All rights reserved.</p>
+    </footer>
+</body>
+</html>
